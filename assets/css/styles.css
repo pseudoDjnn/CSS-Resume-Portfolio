@@ -12,6 +12,7 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: var(--secondary);
+  color: var(--primary);
   /* background-image: url(../images/port-bg.png); */
 }
 
@@ -26,11 +27,13 @@ header {
   background-attachment: fixed;
   padding: 30rem 61rem 27rem 11rem;
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: flex-start;
   align-items: flex-start;
+
   /* opacity: 0.9; */
 }
 
@@ -77,3 +80,35 @@ header nav ul li a {
   border-radius: 1rem;
   text-shadow: none;
 } */
+
+.inbetween {
+  padding: 35rem;
+}
+
+.hero-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.hero {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  /* padding: 1.5rem; */
+  border-radius: 16px;
+  background: #21282a;
+  box-shadow: -1rem 0 3rem #000;
+}
+
+.hero h2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero:hover {
+  transform: translateY(-1rem);
+}
