@@ -1,0 +1,78 @@
+:root {
+  --primary: #df5421;
+  --secondary: #0a9797;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* color: var(--primary); */
+  background-image: url(../images/port-bg.png);
+}
+
+section {
+  padding: 60px;
+}
+
+header {
+  background-image: url(../images/port-bg.png);
+  background-size: cover;
+  background-position: 303%;
+  background-attachment: fixed;
+  padding: 4px 35px 1000px 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-end;
+  opacity: 0.7;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 33px;
+  /* color: var(--primary); */
+  margin: 5px;
+}
+
+header a {
+  color: var(--primary);
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: stretch;
+  flex-direction: column;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+header nav ul li a:hover {
+  background: var(--primary);
+  color: var(--secondary);
+  border-radius: 5px;
+  text-shadow: none;
+}
