@@ -132,6 +132,15 @@ header nav ul li a {
   text-shadow: none;
 } */
 
+.hero {
+  margin-top: -3rem;
+}
+
+.hero h1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .inbetween {
   padding: 6rem;
 }
@@ -140,7 +149,7 @@ header nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 1rem;
+  padding: 65rem;
   width: 65rem;
   height: 150rem;
 
@@ -151,8 +160,8 @@ header nav ul li a {
   display: flex;
   position: relative;
   flex-direction: column;
-  height: 500px;
-  width: 750px;
+  height: 576px;
+  width: 1050px;
   min-width: 250px;
   padding: 1.5rem;
   align-self: center;
@@ -165,19 +174,20 @@ header nav ul li a {
   /* transition: 0.7s; */
 }
 
-.hero-header h2 {
+.hero-highlight h2 {
   display: flex;
   justify-content: space-evenly;
+  /* align-content: ; */
 }
 
-.hero-header p {
+.hero-highlight p {
   display: flex;
   justify-content: space-evenly;
 }
 
 .highlight-work {
-  margin: -4rem;
-  padding: 3vh 9vw;
+  margin: 0rem;
+  padding: 1vh 10vw;
 }
 
 .list-item h3 {
@@ -204,5 +214,5 @@ footer {
   margin-bottom: 2rem;
   display: flex;
   justify-content: flex-end;
-  box-shadow: 0.5rem 0 3rem hsl(15, 50%, 50%);
+  box-shadow: 0.5rem 0 1.5rem hsl(15, 50%, 50%);
 }
