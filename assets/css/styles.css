@@ -1,4 +1,7 @@
 :root {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  --bg: #21282a;
   --primary: #df5421;
   --secondary: #0a9797;
 }
@@ -10,10 +13,21 @@
 }
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: var(--secondary);
+  background-color: var(--bg);
   color: var(--primary);
   /* background-image: url(../images/port-bg.png); */
+}
+
+body::-webkit-scrollbar {
+  width: 0.13rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--primary);
 }
 
 section {
@@ -23,9 +37,9 @@ section {
 header {
   background-image: url(../images/port-bg.png);
   background-size: inherit;
-  background-position: 150%;
+  background-position: -20%;
   background-attachment: fixed;
-  padding: 30rem 61rem 27rem 11rem;
+  padding: 22rem 14rem 33rem 0rem;
   display: flex;
   position: relative;
   flex-direction: row;
@@ -33,6 +47,9 @@ header {
   flex-wrap: wrap;
   align-content: flex-start;
   align-items: flex-start;
+
+  /* margin-left: 5rem; */
+  height: 100vh;
 
   /* opacity: 0.9; */
 }
@@ -45,7 +62,7 @@ header h1 {
 }
 
 header a {
-  color: var(--primary);
+  color: var(--secondary);
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
@@ -70,7 +87,7 @@ header nav ul li a {
   padding: 0rem 1.5rem;
   font-weight: lighter;
   font-size: 1.55vw;
-  text-shadow: 0 0 1rem hsl(50, 50%, 50%);
+  text-shadow: 0 0 1rem hsl(15, 50%, 50%);
 }
 
 /* header nav ul li a:hover {
@@ -82,7 +99,7 @@ header nav ul li a {
 } */
 
 .inbetween {
-  padding: 35rem;
+  padding: 5rem;
 }
 
 .hero-list {
@@ -99,9 +116,13 @@ header nav ul li a {
   width: 400px;
   min-width: 250px;
   /* padding: 1.5rem; */
+
+  /* background-image: url(../images/port-bg.png); */
   border-radius: 16px;
-  background: #21282a;
-  box-shadow: -1rem 0 3rem #000;
+  background: var(--bg);
+  /* box-shadow: -1rem 0 3rem hsl(15, 50%, 50%); */
+
+  transition: 0.7s;
 }
 
 .hero h2 {
@@ -110,5 +131,5 @@ header nav ul li a {
 }
 
 .hero:hover {
-  transform: translateY(-1rem);
+  transform: translateY(-13rem);
 }
