@@ -16,7 +16,9 @@ body {
   background-color: var(--bg);
   color: var(--primary);
   background-image: url(../images/port-bg.png);
-  background-repeat: no-repeat;
+
+  /* background-repeat: space; */
+  /* position: grid-template-rows: ; */
 }
 
 body::-webkit-scrollbar {
@@ -132,7 +134,7 @@ header nav ul li a {
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
-  width: 31rem;
+  width: 50rem;
   height: 150rem;
 
   /* margin: 41px; */
@@ -142,8 +144,8 @@ header nav ul li a {
   display: flex;
   position: relative;
   flex-direction: column;
-  height: 350px;
-  width: 400px;
+  height: 750px;
+  width: 750px;
   min-width: 250px;
   padding: 1.5rem;
   align-self: center;
@@ -159,6 +161,15 @@ header nav ul li a {
 .hero h2 {
   display: flex;
   justify-content: space-evenly;
+}
+
+/* .highlight-work {
+  width: 100%;
+  height: auto;
+} */
+
+.list-item img {
+  width: -webkit-fill-available;
 }
 
 /* .hero:hover {
