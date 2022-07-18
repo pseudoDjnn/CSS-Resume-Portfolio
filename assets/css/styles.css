@@ -15,7 +15,8 @@
 body {
   background-color: var(--bg);
   color: var(--primary);
-  /* background-image: url(../images/port-bg.png); */
+  background-image: url(../images/port-bg.png);
+  background-repeat: no-repeat;
 }
 
 body::-webkit-scrollbar {
@@ -35,7 +36,7 @@ section {
 }
 
 header {
-  background-image: url(../images/port-bg.png);
+  /* background-image: url(../images/port-bg.png); */
   background-size: inherit;
   background-position: -20%;
   background-attachment: fixed;
@@ -50,7 +51,7 @@ header {
 
   /* margin-left: 5rem; */
   height: 100vh;
-  transition: 0.9s;
+  /* transition: 0.9s; */
 
   /* opacity: 0.9; */
 }
@@ -68,6 +69,7 @@ header a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  /* transition: 0.7s; */
 }
 
 header nav {
@@ -78,7 +80,6 @@ header nav {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  transition: 0.7s;
 }
 
 header nav ul {
@@ -110,9 +111,9 @@ header nav ul li a {
   text-decoration: none;
 }
 
-.navbar:hover {
+/* .navbar:hover {
   transform: translateX(3rem);
-}
+} */
 
 /* header nav ul li a:hover {
   display: flex;
@@ -123,30 +124,36 @@ header nav ul li a {
 } */
 
 .inbetween {
-  padding: 5rem;
+  padding: 6rem;
 }
 
 .hero-list {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
+  width: 31rem;
+  height: 150rem;
+
+  /* margin: 41px; */
 }
 
-.hero {
+.list-item {
   display: flex;
   position: relative;
   flex-direction: column;
   height: 350px;
   width: 400px;
   min-width: 250px;
-  /* padding: 1.5rem; */
+  padding: 1.5rem;
+  align-self: center;
 
-  /* background-image: url(../images/port-bg.png); */
+  background-image: url(../images/avatar.png);
   border-radius: 16px;
-  background: var(--bg);
+  /* background: var(--bg); */
   /* box-shadow: -1rem 0 3rem hsl(15, 50%, 50%); */
 
-  transition: 0.7s;
+  /* transition: 0.7s; */
 }
 
 .hero h2 {
@@ -154,6 +161,6 @@ header nav ul li a {
   justify-content: space-evenly;
 }
 
-.hero:hover {
+/* .hero:hover {
   transform: translateY(-13rem);
-}
+} */
