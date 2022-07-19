@@ -5,50 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Portfolio/Resume</title>
+    <title>Portfolio website</title>
   </head>
   <body>
     <!-- Header -->
-    <header class="navbar">
-      <h1>
-        <a href="/">Havers, Alexander</a>
-      </h1>
-      <nav>
-        <ul>
-          <li class="list">
-            <a href="#about-me" class="link">About Me</a>
-          </li>
-          <li class="list">
-            <a href="#projects" class="link">Projects</a>
-          </li>
-          <li class="list">
-            <a href="#contact" class="link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <header>
+      <div class="hero">
+        <nav>
+          <h2 class="main">Portflio<span> Project</span></h2>
+
+          <ul>
+            <li>
+              <a href="#about-me"><span>About Me</span></a></li>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+          </ul>
+
+          <a href="#" class="lnk">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- My name used in the Portfolio-->
-    <!-- <div class="hero">
-      <h1>Havers, Alexander</h1>
-    </div> -->
 
     <!-- Scroll space form Header to About, Porject, Contact sections-->
     <section class="inbetween"></section>
 
     <!-- About me section-->
-    <article id="about-me" class="about">
-      <div class="about-hero">
-        <p>
-          Painter, sculpture, and musician, with a penache for coding to make
-          generative art.
-        </p>
+    <div id="about-me" class="about">
+      <div>
         <h2>About Me</h2>
+        <h1>Alexander <span>Havers</span></h1>
+        <h3>Training to be a Full Stack Web Developer.</h3>
+        <div class="abt-info">
+        <p>
+          Painter, sculpture, and musician, with a penache for coding to make websites and create generative art for fun.
+        </p>
+        </div>
       </div>
-    </article>
+    </div>
 
     <!-- Information section for portfolio-->
-    <section class="hero-list">
+    <section>
       <!-- Projects section-->
       <article id="projects" class="list-item">
         <div class="hero-highlight">
@@ -56,24 +55,24 @@
           <h2>Projects</h2>
         </div>
         <h3>Run Buddy</h3>
-        <nav class="highlight-work">
-          <a href="https://pseudodjnn.github.io/Run-Buddy/">
-            <!-- <img
+        <div class="highlight-work">
+          <!-- <a href="https://pseudodjnn.github.io/Run-Buddy/"> -->
+          <!-- <img
               src="./assets/images/run-buddy.png"
               class="work-img"
               alt="Run-Buddy-io"
             /> -->
-          </a>
-        </nav>
-        <nav class="highlight-work1">
-          <a href="https://pseudodjnn.github.io/Heriseon/">
-            <!-- <img
+          <!-- </a> -->
+        </div>
+        <div class="highlight-work1">
+          <!-- <a href="https://pseudodjnn.github.io/Heriseon/"> -->
+          <!-- <img
               src="./assets/images/horiseon.png"
               class="work-img"
               alt="Run-Buddy-io"
             /> -->
-          </a>
-        </nav>
+          <!-- </a> -->
+        </div>
       </article>
 
       <!-- Contact section -->
