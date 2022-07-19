@@ -3,7 +3,8 @@
   --bg: #21282a;
   --primary: #df5421;
   --secondary: #0a9797;
-  --tertiary: #6e32ff;
+  --tertiary: #451ea1;
+  --quaternary: #a0933b;
 }
 * {
   margin: 0;
@@ -33,12 +34,12 @@ section {
 }
 
 /* HEADER */
-header {
-  /* position: fixed;
+/* header { */
+/* position: fixed;
   padding: 0rem 25rem;
   display: flex;
   height: 5vh; */
-}
+/* } */
 
 .hero {
   height: 100vh;
@@ -118,25 +119,35 @@ h2 {
   color: var(--tertiary);
   letter-spacing: 0.7rem;
   font-size: 2rem;
+  text-align: end;
 }
 
 h1 {
-  color: var(--secondary);
+  color: var(--primary);
   margin: -1rem 0rem 1rem;
   font-size: 5rem;
+  /* text-decoration: underline; */
 }
 
 h3 {
-  color: var(--primary);
+  color: var(--quaternary);
   margin-bottom: 2.5rem;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .abt-info p {
-  color: var(--primary);
-  width: 380px;
+  color: var(--secondary);
+  width: 33rem;
   max-width: 100%;
-  position: relative;
+  position: absolute;
+  text-align: justify;
+  letter-spacing: 0.2rem;
+}
+
+.abt-info p:hover {
+  transform: transition 0.7s;
+  color: var(--primary);
 }
 
 /* FOOTER */
