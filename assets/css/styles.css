@@ -1,5 +1,4 @@
 :root {
-  /* font-size: 16px; */
   --bg: #21282a;
   --primary: #df5421;
   --secondary: #0a9797;
@@ -13,9 +12,9 @@
   box-sizing: border-box;
 }
 
-/* body {
-  color: var(--primary);
-} */
+body {
+  background-color: var(--bg);
+}
 
 body::-webkit-scrollbar {
   width: 0.13rem;
@@ -41,6 +40,7 @@ section {
   height: 5vh; */
 /* } */
 
+/* HEADER SECTION */
 .hero {
   height: 100vh;
   width: 100%;
@@ -54,14 +54,14 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding-top: 45px;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .main {
   color: var(--primary);
   font-size: 35px;
-  letter-spacing: 1px;
+  letter-spacing: 1rem;
   cursor: pointer;
 }
 
@@ -91,6 +91,7 @@ nav ul li a:hover {
   color: var(--tertiary);
   transition: 0.4s;
 }
+
 .lnk {
   background-color: var(--primary);
   color: var(--bg);
@@ -99,20 +100,31 @@ nav ul li a:hover {
   font-weight: 700;
   padding: 0rem 1rem;
   border-radius: 1rem;
-  transition: transform 0.4s;
+  transition: transform 1200ms;
 }
 
 .lnk:hover {
   background-color: var(--tertiary);
   color: var(--primary);
   transform: scaleX(1.5);
+  transition: 1200ms;
 }
+
+/* ABOUT ME SECTION */
 
 .about {
   position: absolute;
   top: 50%;
   left: 8%;
   transform: translateY(-50%);
+}
+
+.about h2:hover {
+  background-color: var(--tertiary);
+  color: var(--quaternary);
+  border-radius: 1rem;
+  transition: 1200ms;
+  z-index: 9999;
 }
 
 h2 {
@@ -136,13 +148,20 @@ h3 {
   text-align: center;
 }
 
+h3:hover {
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  border-radius: 1rem;
+  transition: 1200ms;
+}
+
 .abt-info p {
   color: var(--secondary);
-  width: 33rem;
+  width: 43rem;
   max-width: 100%;
   position: absolute;
   text-align: justify;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
 }
 
 .abt-info p:hover {
@@ -150,11 +169,66 @@ h3 {
   color: var(--primary);
 }
 
+/* PROJECT SECTION */
+
+.project {
+  position: absolute;
+  top: 25%;
+  /* bottom: -10%; */
+  left: 75%;
+  transform: translateY(200%);
+}
+
+.project h2 {
+  text-align: center;
+  /* left: 50%; */
+}
+
+.project h3 {
+  text-align: justify;
+  font-size: 2rem;
+  width: 1000px;
+  margin: 19px auto;
+}
+
+.project img {
+  /* position: relative; */
+  /* padding-top: 0%; */
+  /* right: 12%; */
+  /* display: flex; */
+  object-fit: contain;
+  /* width: 66.67%; */
+  height: 40.67%;
+  /* text-align: end; */
+}
+
+.prjct-ttl {
+  border-radius: 20px;
+  height: 651px;
+  bottom: 410px;
+  width: 1000px;
+  background: var(--bg);
+  position: relative;
+  text-align: center;
+}
+
+/* .project h2 {
+  position: absolute;
+  top: 100%;
+  left: 8%;
+  transform: translateY(75%);
+} */
+
+/* .project-title h3 {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  text-align: center;
+} */
+
 /* FOOTER */
 footer {
   margin: 1rem;
   margin-bottom: 2rem;
   display: flex;
   justify-content: flex-end;
-  /* box-shadow: 0.5rem 0 1.5rem hsl(15, 50%, 50%); */
 }
