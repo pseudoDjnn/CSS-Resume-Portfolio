@@ -255,6 +255,14 @@ h3:hover {
   margin-bottom: 2rem;
 }
 
+.contact-me p:hover {
+  background-color: var(--tertiary);
+  color: var(--quaternary);
+  border-radius: 1rem;
+  transition: 1200ms ease-in-out;
+  z-index: -9999;
+}
+
 a.btn {
   background-color: var(--primary);
   color: var(--bg);
@@ -265,6 +273,13 @@ a.btn {
   padding: 0rem 1rem;
   border-radius: 1rem;
   transition: transform 1200ms;
+}
+
+a.btn:hover {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  transform: scaleX(1.5);
+  transition: 1200ms ease-in-out;
 }
 
 /* FOOTER */
@@ -280,8 +295,6 @@ footer {
 
 footer:hover {
   background-color: var(--secondary);
-  color: var(--quaternary);
-  border-radius: 1rem;
+  border-radius: 2rem;
   transition: 1200ms ease-in-out;
-  z-index: -9999;
 }
