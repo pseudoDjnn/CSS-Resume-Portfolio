@@ -107,6 +107,7 @@ nav ul li a:hover {
 
 .about {
   position: absolute;
+  background: transparent;
   top: 49.7%;
   left: 17%;
   transform: translateY(-50%);
@@ -164,17 +165,24 @@ h3:hover {
 }
 
 /* PROJECT SECTION */
-
-/* .project {
+.project {
   position: absolute;
-  top: 175%;
-  left: 11%;
-  transform: translateY(-100%);
-} */
+  top: 127.7%;
+  left: 9%;
+  transform: translateY(-50%);
+}
 
 .project h2 {
   text-align: justify;
   color: var(--primary);
+}
+
+.project h2:hover {
+  background-color: var(--tertiary);
+  color: var(--quaternary);
+  border-radius: 1rem;
+  transition: 1200ms ease-in-out;
+  z-index: -9999;
 }
 
 .project h3 {
@@ -186,22 +194,28 @@ h3:hover {
 
 .title {
   position: absolute;
-  /* margin: 0 auto;
-  top: 100%; */
   left: 17%;
-  /* height: 651px; */
 }
 
-.project img {
-  /* position: relative; */
-  /* padding-top: 0%; */
-  /* right: 12%; */
-  /* display: flex; */
-  /* object-fit: contain; */
-  width: 567px;
+.title img {
+  position: absolute;
+  width: 1293px;
   height: auto;
-  /* text-align: end; */
+  left: -150px;
 }
+.previous {
+  position: absolute;
+  width: 100%;
+}
+
+.previous img {
+  position: absolute;
+  width: 576px;
+  height: auto;
+  left: 1250px;
+}
+
+/* CONTACT SECTION */
 
 .contact-me {
   position: absolute;
@@ -220,7 +234,8 @@ h3:hover {
 .contact-me p {
   text-align: center;
   color: var(--quaternary);
-  font-size: 1rem;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
   font-weight: bolder;
   margin-bottom: 2rem;
 }
@@ -245,4 +260,12 @@ footer {
   /* margin-bottom: 2rem; */
   display: flex;
   justify-content: flex-end;
+}
+
+footer:hover {
+  background-color: var(--secondary);
+  color: var(--quaternary);
+  border-radius: 1rem;
+  transition: 1200ms ease-in-out;
+  z-index: -9999;
 }
