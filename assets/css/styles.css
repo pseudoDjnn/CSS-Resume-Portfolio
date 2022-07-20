@@ -255,12 +255,13 @@ h3:hover {
   margin-bottom: 2rem;
 }
 
-.btn {
+a.btn {
   background-color: var(--primary);
   color: var(--bg);
   text-decoration: none;
   border: 0.25rem solid transparent;
   font-weight: 700;
+  margin: 430px;
   padding: 0rem 1rem;
   border-radius: 1rem;
   transition: transform 1200ms;
