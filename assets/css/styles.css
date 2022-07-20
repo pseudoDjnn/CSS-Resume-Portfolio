@@ -221,6 +221,13 @@ h3:hover {
   width: 576px;
   height: auto;
   left: 1250px;
+  margin: auto;
+  border: solid 1px var(--tertiary);
+  padding: 7px;
+  background-color: var(--secondary);
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+  border-radius: 72px;
+  margin-bottom: 25px;
 }
 
 /* CONTACT SECTION */
