@@ -298,3 +298,26 @@ footer:hover {
   border-radius: 2rem;
   transition: 1200ms ease-in-out;
 }
+
+/* MEDIA QUERY */
+@media screen and (max-width: 980px) {
+  p {
+    font-size: xx-large;
+    line-height: 1.5;
+    /* bottom: 25px; */
+  }
+  .previous img {
+    left: 50px;
+    top: 750px;
+  }
+  .project {
+    /* margin-top: 25px; */
+    top: 2937px;
+  }
+  .contact-me {
+    margin: 365px;
+  }
+  a.btn {
+    margin: 245px;
+  }
+}
