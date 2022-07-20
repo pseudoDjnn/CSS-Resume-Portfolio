@@ -201,7 +201,7 @@ h3:hover {
   position: absolute;
   width: 1293px;
   height: auto;
-  left: -150px;
+  left: -91px;
   margin: auto;
   border: solid 1px var(--tertiary);
   padding: 7px;
@@ -220,7 +220,7 @@ h3:hover {
   position: absolute;
   width: 576px;
   height: auto;
-  left: 1250px;
+  left: 1289px;
   margin: auto;
   border: solid 1px var(--tertiary);
   padding: 7px;
@@ -301,23 +301,33 @@ footer:hover {
 
 /* MEDIA QUERY */
 @media screen and (max-width: 980px) {
+  .hero {
+    object-fit: fill;
+  }
   p {
     font-size: xx-large;
     line-height: 1.5;
     /* bottom: 25px; */
   }
+  .title img {
+    width: 745px;
+  }
   .previous img {
-    left: 50px;
-    top: 750px;
+    left: 80px;
+    top: 455px;
   }
   .project {
     /* margin-top: 25px; */
-    top: 2937px;
+    top: 1527px;
   }
   .contact-me {
-    margin: 365px;
+    margin: 8px;
+    top: 2395px;
   }
   a.btn {
-    margin: 245px;
+    margin: 369px;
+  }
+  footer {
+    top: 2525px;
   }
 }
