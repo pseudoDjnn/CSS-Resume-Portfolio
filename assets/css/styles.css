@@ -20,6 +20,12 @@ body {
   background-color: var(--bg);
 }
 
+section {
+  padding: 60px;
+}
+
+/* SCROLLBAR */
+
 body::-webkit-scrollbar {
   width: 0.13rem;
 }
@@ -32,17 +38,11 @@ body::-webkit-scrollbar-thumb {
   background: var(--primary);
 }
 
-section {
-  padding: 60px;
-}
-
 /* HEADER SECTION */
+
 .hero {
   height: 100vh;
   width: 100%;
-  /* background-size: cover;
-  background-position: center; */
-  /* position: relative; */
 }
 
 nav {
@@ -169,6 +169,7 @@ h3:hover {
 }
 
 /* PROJECT SECTION */
+
 .project {
   position: absolute;
   top: 139.7%;
@@ -195,15 +196,6 @@ h3:hover {
   margin: 1rem auto;
 }
 
-.title {
-  position: absolute;
-  left: 17%;
-}
-
-/* li {
-  text-decoration: none;
-} */
-
 .project img {
   max-width: 100%;
   width: 500px;
@@ -215,6 +207,11 @@ h3:hover {
 
 .project img:hover {
   transform: scale(1.03);
+}
+
+.title {
+  position: absolute;
+  left: 17%;
 }
 
 .title img {
@@ -232,14 +229,14 @@ h3:hover {
   margin-bottom: 25px;
 }
 
+/* PREVIOUS CONTENT SECTION TO UPDATE DURING THE CLASS */
+
 .content {
   display: flex;
-  /* grid-template-columns: repeat(auto-fit, minmax(370px, auto)); */
   grid-gap: 69rem;
   align-items: center;
   margin: -28px;
   padding: 0 30px;
-  /* border-radius: 10px; */
   transition: all 0.35s;
 }
 
@@ -250,26 +247,17 @@ h3:hover {
   margin-bottom: 15px;
 }
 
+.content h4:hover {
+  color: var(--secondary);
+  transform: translateX(4%);
+  transition: 10000ms ease-in-out;
+}
+
 .content-previous img {
   position: absolute;
   left: 1083px;
   width: 550px;
 }
-
-/* .previous img {
-  position: absolute;
-  width: 576px;
-  height: auto;
-  top: 428px;
-  left: 1184px;
-  margin: auto;
-  border: solid 1px var(--tertiary);
-  padding: 7px;
-  background-color: var(--secondary);
-  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-  border-radius: 72px;
-  margin-bottom: 25px;
-} */
 
 /* CONTACT SECTION */
 
@@ -324,6 +312,7 @@ a.btn:hover {
 }
 
 /* FOOTER */
+
 footer {
   position: absolute;
   top: 237%;
@@ -341,6 +330,7 @@ footer:hover {
 }
 
 /* MEDIA QUERY */
+
 @media screen and (max-width: 1270px) {
   header {
     padding: 0px 4%;
