@@ -325,9 +325,70 @@ footer:hover {
     top: 2395px;
   }
   a.btn {
-    margin: 369px;
+    margin: 48px;
   }
   footer {
     top: 2525px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: none;
+  }
+  nav {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 9px;
+  }
+  .main {
+    letter-spacing: normal;
+  }
+  .lnk {
+    margin: 5%;
+  }
+  .about {
+    margin: -5px;
+    padding: -1px;
+  }
+  .about h2 {
+    text-align: center;
+  }
+  .about h1 {
+    text-align: start;
+    flex-wrap: wrap;
+  }
+  .about h3 {
+    text-align: start;
+    width: min-content;
+  }
+  .abt-info p {
+    left: -88px;
+    width: 85%;
+    font-size: small;
+    letter-spacing: normal;
+  }
+  .project {
+    top: 885px;
+    flex-shrink: 10px;
+  }
+  .title img {
+    width: 445px;
+  }
+  .previous img {
+    width: 445px;
+    left: -15px;
+    top: 290px;
+  }
+  .contact-me {
+    top: 1495px;
+  }
+  .contact-me p {
+    letter-spacing: normal;
+    font-size: larger;
+  }
+  footer {
+    top: 1604px;
+    right: 134px;
   }
 }
