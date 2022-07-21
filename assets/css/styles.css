@@ -338,7 +338,7 @@ footer:hover {
   }
   div {
     margin: -47px;
-    padding: 80px 4%;
+    padding: 49px 4%;
     transition: 0.2s;
   }
   nav {
@@ -370,5 +370,45 @@ footer:hover {
   }
   footer {
     top: 182%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    left: 24px;
+  }
+  h1 {
+    font-size: xx-large;
+    margin: 39px;
+  }
+  h3 {
+    display: flex;
+    padding-left: 345px;
+  }
+  .abt-info p {
+    letter-spacing: 0;
+    width: 40rem;
+    margin: 22px;
+    left: 12px;
+  }
+  .project h3 {
+    margin: 1px;
+    font-size: small;
+  }
+  .project img {
+    width: 100%;
+  }
+  .title img {
+    width: 50%;
+    top: 230px;
+  }
+  .content-previous img {
+    left: 200px;
+  }
+  .contact-me {
+    top: 1235px;
+  }
+  footer {
+    top: 150%;
   }
 }
