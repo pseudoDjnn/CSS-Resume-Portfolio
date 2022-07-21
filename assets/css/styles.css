@@ -13,6 +13,10 @@
 }
 
 body {
+  background-image: url(../images/port-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--bg);
 }
 
@@ -36,9 +40,9 @@ section {
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: url(../images/port-bg.png);
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover;
+  background-position: center; */
+  /* position: relative; */
 }
 
 nav {
@@ -167,7 +171,7 @@ h3:hover {
 /* PROJECT SECTION */
 .project {
   position: absolute;
-  top: 127.7%;
+  top: 139.7%;
   left: 9%;
   transform: translateY(-50%);
 }
@@ -186,9 +190,8 @@ h3:hover {
 }
 
 .project h3 {
-  text-align: end;
   font-size: 2rem;
-  /* width: 1000px; */
+  width: max-content;
   margin: 1rem auto;
 }
 
@@ -197,30 +200,68 @@ h3:hover {
   left: 17%;
 }
 
+/* li {
+  text-decoration: none;
+} */
+
+.project img {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: all 5000ms;
+}
+
+.project img:hover {
+  transform: scale(1.03);
+}
+
 .title img {
   position: absolute;
-  width: 1293px;
+  width: 1164px;
   height: auto;
-  left: -91px;
+  top: 202px;
+  left: -122px;
   margin: auto;
-  border: solid 1px var(--tertiary);
+  border: solid 1px var(--secondary);
   padding: 7px;
-  background-color: var(--secondary);
+  background-color: var(--quaternary);
   box-shadow: 0 0 10px rgb(0 0 0 / 50%);
   border-radius: 72px;
   margin-bottom: 25px;
 }
 
-.previous {
-  position: absolute;
-  width: 100%;
+.content {
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(370px, auto)); */
+  grid-gap: 69rem;
+  align-items: center;
+  margin: -28px;
+  padding: 0 30px;
+  /* border-radius: 10px; */
+  transition: all 0.35s;
 }
 
-.previous img {
+.content h4 {
+  color: var(--primary);
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.content-previous img {
+  position: absolute;
+  left: 1083px;
+  width: 550px;
+}
+
+/* .previous img {
   position: absolute;
   width: 576px;
   height: auto;
-  left: 1289px;
+  top: 428px;
+  left: 1184px;
   margin: auto;
   border: solid 1px var(--tertiary);
   padding: 7px;
@@ -228,13 +269,13 @@ h3:hover {
   box-shadow: 0 0 10px rgb(0 0 0 / 50%);
   border-radius: 72px;
   margin-bottom: 25px;
-}
+} */
 
 /* CONTACT SECTION */
 
 .contact-me {
   position: absolute;
-  top: 220%;
+  top: 226%;
   /* left: 45%; */
   width: 99%;
   /* height: 185%; */
@@ -300,95 +341,44 @@ footer:hover {
 }
 
 /* MEDIA QUERY */
-@media screen and (max-width: 980px) {
-  .hero {
-    object-fit: fill;
+@media screen and (max-width: 1270px) {
+  header {
+    padding: 0px 4%;
+    transition: 0.2s;
   }
-  p {
-    font-size: xx-large;
-    line-height: 1.5;
-    /* bottom: 25px; */
-  }
-  .title img {
-    width: 745px;
-  }
-  .previous img {
-    left: 80px;
-    top: 455px;
-  }
-  .project {
-    /* margin-top: 25px; */
-    top: 1527px;
-  }
-  .contact-me {
-    margin: 8px;
-    top: 2395px;
-  }
-  a.btn {
-    margin: 48px;
-  }
-  footer {
-    top: 2525px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero {
-    background-image: none;
+  div {
+    margin: -47px;
+    padding: 80px 4%;
+    transition: 0.2s;
   }
   nav {
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 9px;
-  }
-  .main {
-    letter-spacing: normal;
-  }
-  .lnk {
-    margin: 5%;
-  }
-  .about {
-    margin: -5px;
-    padding: -1px;
-  }
-  .about h2 {
-    text-align: center;
-  }
-  .about h1 {
-    text-align: start;
-    flex-wrap: wrap;
-  }
-  .about h3 {
-    text-align: start;
-    width: min-content;
-  }
-  .abt-info p {
-    left: -88px;
-    width: 85%;
-    font-size: small;
-    letter-spacing: normal;
+    padding: 16px 4%;
+    transition: 0.2s;
   }
   .project {
-    top: 885px;
-    flex-shrink: 10px;
+    top: 912px;
+  }
+  .content {
+    grid-gap: 325px;
   }
   .title img {
-    width: 445px;
+    margin: 46px 4%;
+    margin-left: 95px;
+    top: 349px;
+    width: 720px;
   }
-  .previous img {
-    width: 445px;
-    left: -15px;
-    top: 290px;
+  .content-previous img {
+    left: 370px;
+    top: 366px;
+    width: 389px;
   }
   .contact-me {
-    top: 1495px;
+    top: 1448px;
   }
-  .contact-me p {
-    letter-spacing: normal;
-    font-size: larger;
+  .contact-me a.btn {
+    margin: 156px;
   }
   footer {
-    top: 1604px;
-    right: 134px;
+    top: 182%;
   }
 }
