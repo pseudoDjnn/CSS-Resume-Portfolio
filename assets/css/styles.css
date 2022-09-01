@@ -311,6 +311,15 @@ a.btn:hover {
   transition: 1200ms ease-in-out;
 }
 
+/* AVATAR */
+.img-responsive {
+  /* left: 25%; */
+  /* position: relative; */
+  padding: 60px;
+  width: 25%;
+  height: auto;
+}
+
 /* FOOTER */
 
 footer {
